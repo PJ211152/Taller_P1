@@ -23,9 +23,15 @@ namespace Taller_Ej_1
 
             try
             {
-                a = Convert.ToDouble(txb_a);
-                b = Convert.ToDouble(txb_b);
-                c = Convert.ToDouble(txb_c);
+                a = Convert.ToDouble(txb_a.Text);
+                b = Convert.ToDouble(txb_b.Text);
+                c = Convert.ToDouble(txb_c.Text);
+
+                x1 = (-b + Math.Sqrt(Math.Pow(b,2) - (4 * c * a))) / (2 * a);
+                x2 = (-b - Math.Sqrt((b * b) - (4 * c * a))) / (2 * a);
+
+                txb_x1.Text = Convert.ToString(x1);
+                txb_x2.Text = Convert.ToString(x2);
             }
             catch (FormatException)
             {
