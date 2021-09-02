@@ -16,5 +16,20 @@ namespace Taller_Ej_2
         {
             InitializeComponent();
         }
+
+        private void lsb_Recuento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_recuento_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btb_limpiar_lista_Click(object sender, EventArgs e)
+        {
+            lsb_Votos.Items.Clear();
+        }
     }
 }
