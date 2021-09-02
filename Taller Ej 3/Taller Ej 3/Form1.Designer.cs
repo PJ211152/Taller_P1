@@ -38,6 +38,11 @@
             this.txtnum2 = new System.Windows.Forms.TextBox();
             this.txtnum3 = new System.Windows.Forms.TextBox();
             this.txtnum4 = new System.Windows.Forms.TextBox();
+            this.btncalcular = new System.Windows.Forms.Button();
+            this.txtsumar = new System.Windows.Forms.TextBox();
+            this.txtmayor = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -100,7 +105,6 @@
             this.txtnum1.Name = "txtnum1";
             this.txtnum1.Size = new System.Drawing.Size(100, 20);
             this.txtnum1.TabIndex = 6;
-            this.txtnum1.TextChanged += new System.EventHandler(this.txtnum1_TextChanged);
             // 
             // txtnum2
             // 
@@ -123,11 +127,58 @@
             this.txtnum4.Size = new System.Drawing.Size(100, 20);
             this.txtnum4.TabIndex = 9;
             // 
+            // btncalcular
+            // 
+            this.btncalcular.Location = new System.Drawing.Point(515, 77);
+            this.btncalcular.Name = "btncalcular";
+            this.btncalcular.Size = new System.Drawing.Size(75, 23);
+            this.btncalcular.TabIndex = 10;
+            this.btncalcular.Text = "Calcular";
+            this.btncalcular.UseVisualStyleBackColor = true;
+            this.btncalcular.Click += new System.EventHandler(this.btncalcular_Click);
+            // 
+            // txtsumar
+            // 
+            this.txtsumar.Location = new System.Drawing.Point(486, 173);
+            this.txtsumar.Name = "txtsumar";
+            this.txtsumar.Size = new System.Drawing.Size(100, 20);
+            this.txtsumar.TabIndex = 11;
+            // 
+            // txtmayor
+            // 
+            this.txtmayor.Location = new System.Drawing.Point(486, 267);
+            this.txtmayor.Name = "txtmayor";
+            this.txtmayor.Size = new System.Drawing.Size(100, 20);
+            this.txtmayor.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(486, 248);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "mayor";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(489, 154);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Suma";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtmayor);
+            this.Controls.Add(this.txtsumar);
+            this.Controls.Add(this.btncalcular);
             this.Controls.Add(this.txtnum4);
             this.Controls.Add(this.txtnum3);
             this.Controls.Add(this.txtnum2);
@@ -157,6 +208,11 @@
         private System.Windows.Forms.TextBox txtnum2;
         private System.Windows.Forms.TextBox txtnum3;
         private System.Windows.Forms.TextBox txtnum4;
+        private System.Windows.Forms.Button btncalcular;
+        private System.Windows.Forms.TextBox txtsumar;
+        private System.Windows.Forms.TextBox txtmayor;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 
