@@ -31,5 +31,23 @@ namespace Taller_Ej_2
         {
             lsb_Votos.Items.Clear();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OnKeyDownHandler(object sender, KeyEventArgs kea)
+        {
+            if (kea.KeyCode.Equals(Keys.Return))
+            {
+                lsb_Votos.Items.Add(txb_votos.Text);
+            }
+        }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            lsb_Votos.Items.Add(txb_votos.Text);
+        }
     }
 }

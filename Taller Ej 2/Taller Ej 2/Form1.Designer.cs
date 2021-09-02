@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btb_limpiar_lista = new System.Windows.Forms.Button();
             this.lsb_Votos = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txb_votos = new System.Windows.Forms.TextBox();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.lsb_Recuento = new System.Windows.Forms.ListBox();
             this.lbl_recuento = new System.Windows.Forms.Label();
@@ -57,12 +57,14 @@
             this.lsb_Votos.Size = new System.Drawing.Size(120, 225);
             this.lsb_Votos.TabIndex = 1;
             // 
-            // textBox1
+            // txb_votos
             // 
-            this.textBox1.Location = new System.Drawing.Point(342, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.txb_votos.Location = new System.Drawing.Point(342, 19);
+            this.txb_votos.Name = "txb_votos";
+            this.txb_votos.Size = new System.Drawing.Size(100, 20);
+            this.txb_votos.TabIndex = 2;
+            this.txb_votos.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txb_votos.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnKeyDownHandler);
             // 
             // btn_agregar
             // 
@@ -73,6 +75,7 @@
             this.btn_agregar.TabIndex = 3;
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // lsb_Recuento
             // 
@@ -124,7 +127,7 @@
             this.Controls.Add(this.lbl_recuento);
             this.Controls.Add(this.lsb_Recuento);
             this.Controls.Add(this.btn_agregar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txb_votos);
             this.Controls.Add(this.lsb_Votos);
             this.Controls.Add(this.btb_limpiar_lista);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -139,7 +142,7 @@
 
         private System.Windows.Forms.Button btb_limpiar_lista;
         private System.Windows.Forms.ListBox lsb_Votos;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txb_votos;
         private System.Windows.Forms.Button btn_agregar;
         private System.Windows.Forms.ListBox lsb_Recuento;
         private System.Windows.Forms.Label lbl_recuento;
