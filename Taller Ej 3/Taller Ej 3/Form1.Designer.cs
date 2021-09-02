@@ -153,6 +153,7 @@
             // 
             this.txtsumar.Location = new System.Drawing.Point(572, 211);
             this.txtsumar.Name = "txtsumar";
+            this.txtsumar.ReadOnly = true;
             this.txtsumar.Size = new System.Drawing.Size(100, 20);
             this.txtsumar.TabIndex = 11;
             // 
@@ -160,6 +161,7 @@
             // 
             this.txtmayor.Location = new System.Drawing.Point(486, 280);
             this.txtmayor.Name = "txtmayor";
+            this.txtmayor.ReadOnly = true;
             this.txtmayor.Size = new System.Drawing.Size(100, 20);
             this.txtmayor.TabIndex = 12;
             // 
@@ -187,6 +189,7 @@
             // 
             this.txtmenor.Location = new System.Drawing.Point(641, 280);
             this.txtmenor.Name = "txtmenor";
+            this.txtmenor.ReadOnly = true;
             this.txtmenor.Size = new System.Drawing.Size(100, 20);
             this.txtmenor.TabIndex = 15;
             // 
@@ -204,6 +207,7 @@
             // 
             this.txtmayortotal.Location = new System.Drawing.Point(486, 343);
             this.txtmayortotal.Name = "txtmayortotal";
+            this.txtmayortotal.ReadOnly = true;
             this.txtmayortotal.Size = new System.Drawing.Size(100, 20);
             this.txtmayortotal.TabIndex = 17;
             // 
@@ -211,6 +215,7 @@
             // 
             this.txtmenortotal.Location = new System.Drawing.Point(641, 342);
             this.txtmenortotal.Name = "txtmenortotal";
+            this.txtmenortotal.ReadOnly = true;
             this.txtmenortotal.Size = new System.Drawing.Size(100, 20);
             this.txtmenortotal.TabIndex = 18;
             // 

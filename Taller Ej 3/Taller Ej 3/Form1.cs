@@ -566,6 +566,14 @@ namespace Taller_Ej_3
                 txtnum4.Clear();
 
             }
+            catch(OverflowException)
+            {
+                MessageBox.Show("Ha ingresado un numero demasiado grande ");
+                txtnum1.Clear();
+                txtnum2.Clear();
+                txtnum3.Clear();
+                txtnum4.Clear();
+            }
 
             
 
