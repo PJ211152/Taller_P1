@@ -16,5 +16,10 @@ namespace Taller_Ej_3
         {
             InitializeComponent();
         }
+
+        private void txtnum1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
