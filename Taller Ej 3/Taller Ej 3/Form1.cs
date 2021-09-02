@@ -35,28 +35,125 @@ namespace Taller_Ej_3
 
                          
 
-
-
+                    //1
+                    //mayor num1
                     if (num1 > num2 && num1 > num3 && num1 > num4)
                     {
-                        mayor = num1;
-                        txtmayor.Text = Convert.ToString(mayor);
+                        //menor num2,num3,num4
+                        
+                        if (num2 < num1 && num2 < num3 && num2 < num4)
+                        {
+                            menor = num2;
+                            mayor = num1;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+
+                        }
+                        else if (num3 < num1 && num3 < num2 && num3 < num4) 
+                        {
+                            menor = num3;
+                            mayor = num1;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+                        }
+                        else if (num4 < num1 && num4 < num2 && num4 < num3)
+                        {
+                            menor = num4;
+                            mayor = num1;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+                        }
+
+                      
 
                     }
+                    //mayor num2
+                    
                     else if (num2 > num1 && num2 > num3 && num2 > num4)
                     {
-                        mayor = num2;
-                        txtmayor.Text = Convert.ToString(mayor);
+                        //menor  num1,num3,num4
+                        if (num1 < num2 && num1 < num3 && num1 < num4)
+                        {
+                            menor = num1;
+                            mayor = num2;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+
+                        }
+                        else if (num3 < num1 && num3 < num2 && num3 < num4)
+                        {
+                            menor = num3;
+                            mayor = num2;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+                        }
+                        else if (num4 < num1 && num4 < num2 && num4 < num3)
+                        {
+                            menor = num4;
+                            mayor = num2;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+                        }
+
+                        
                     }
+                    //mayor num3
                     else if (num3 > num1 && num3 > num2 && num3 > num4)
                     {
-                        mayor = num3;
-                        txtmayor.Text = Convert.ToString(mayor);
+                        //menor num1,num2,num4
+                        if (num1 < num2 && num1 < num3 && num1 < num4)
+                        {
+                            menor = num1;
+                            mayor = num3;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+
+                        }
+                        else if (num2 < num1 && num2 < num3 && num2 < num4)
+                        {
+                            menor = num2;
+                            mayor = num3;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+                        }
+                        else if (num4 < num1 && num4 < num2 && num4 < num3)
+                        {
+                            menor = num4;
+                            mayor = num3;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+                        }
+
+                        
                     }
+                    //mayornum4
                     else if (num4 > num1 && num4 > num2 && num4 > num3)
                     {
-                        mayor = num4;
-                        txtmayor.Text = Convert.ToString(mayor);
+                        //menor num1,num2,num3
+                        if (num1 < num2 && num1 < num3 && num1 < num4)
+                        {
+                            menor = num1;
+                            mayor = num4;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+
+                        }
+                        else if (num2 < num1 && num2 < num3 && num2 < num4)
+                        {
+                            menor = num2;
+                            mayor = num4;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+                        }
+                        else if (num3 < num1 && num3 < num2 && num3 < num4)
+                        {
+                            menor = num4;
+                            mayor = num4;
+                            txtmayor.Text = Convert.ToString(mayor);
+                            txtmenor.Text = Convert.ToString(menor);
+                        }
+
+                        
                     }
 
                     

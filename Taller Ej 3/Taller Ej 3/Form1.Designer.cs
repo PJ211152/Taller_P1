@@ -43,6 +43,8 @@
             this.txtmayor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtmenor = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -169,11 +171,29 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Suma";
             // 
+            // txtmenor
+            // 
+            this.txtmenor.Location = new System.Drawing.Point(655, 266);
+            this.txtmenor.Name = "txtmenor";
+            this.txtmenor.Size = new System.Drawing.Size(100, 20);
+            this.txtmenor.TabIndex = 15;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(655, 248);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 13);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Menor";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtmenor);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtmayor);
@@ -213,6 +233,8 @@
         private System.Windows.Forms.TextBox txtmayor;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtmenor;
+        private System.Windows.Forms.Label label9;
     }
 }
 
