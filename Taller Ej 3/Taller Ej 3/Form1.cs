@@ -163,6 +163,7 @@ namespace Taller_Ej_3
                                     menortotal = menor;
                                     txtmayortotal.Text = Convert.ToString(mayortotal);
                                     txtmenortotal.Text = Convert.ToString(menortotal);
+
                                 }
                             }
 
