@@ -535,6 +535,12 @@ namespace Taller_Ej_3
 
 
                     }
+                    else
+                    {
+                        MessageBox.Show("La sumatoria de los numeros es mayor a 200, porfavor ingresar numeros que su sumatoria no exceda los 200");
+
+
+                    }
                 }
 
                 else
