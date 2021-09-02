@@ -56,6 +56,7 @@
             this.lsb_Votos.Name = "lsb_Votos";
             this.lsb_Votos.Size = new System.Drawing.Size(120, 225);
             this.lsb_Votos.TabIndex = 1;
+            this.lsb_Votos.SelectedIndexChanged += new System.EventHandler(this.lsb_Votos_SelectedIndexChanged);
             // 
             // txb_votos
             // 
@@ -115,6 +116,7 @@
             this.btn_contar.TabIndex = 7;
             this.btn_contar.Text = "Contar votos";
             this.btn_contar.UseVisualStyleBackColor = true;
+            this.btn_contar.Click += new System.EventHandler(this.btn_contar_Click);
             // 
             // Form1
             // 

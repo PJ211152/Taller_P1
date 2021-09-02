@@ -39,23 +39,85 @@ namespace Taller_Ej_2
 
         private void OnKeyDownHandler(object sender, KeyEventArgs kea)
         {
-            if (kea.KeyCode.Equals(Keys.Return))
+            try
             {
                 if (txb_votos.Text.Length != 0)
                 {
-                    lsb_Votos.Items.Add(txb_votos.Text);
-                    txb_votos.Clear();
+
+                    string votos = txb_votos.Text;
+                    string[] subs = votos.Split(' ', '.', ',', '-', '/', '#');
+
+                    foreach (var sub in subs)
+                    {
+                        if (Convert.ToInt32(sub) > 0 && Convert.ToInt32(sub) <= 4)
+                        {
+
+                            lsb_Votos.Items.Add($"{sub}");
+
+                            conteo(subs);
+
+                        }
+
+                        txb_votos.Clear();
+
+
+                    }
                 }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Ingrese valores validos");
             }
         }
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            if(txb_votos.Text.Length != 0)
+            try
             {
-                lsb_Votos.Items.Add(txb_votos.Text);
-                txb_votos.Clear();
+                if (txb_votos.Text.Length != 0)
+                {
+
+                    string votos = txb_votos.Text;
+                    string[] subs = votos.Split(' ', '.', ',', '-', '/', '#');
+
+                    foreach (var sub in subs)
+                    {
+                        if (Convert.ToInt32(sub) > 0 && Convert.ToInt32(sub) <= 4)
+                        {
+
+                            lsb_Votos.Items.Add($"{sub}");
+
+                            conteo(subs);
+
+                        }
+
+                        txb_votos.Clear();
+                        
+
+                    }
+                }
             }
+            catch (FormatException)
+            {
+                MessageBox.Show("Ingrese valores validos");
+            }
+        }
+
+        private void lsb_Votos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_contar_Click(object sender, EventArgs e)
+        {
+            
+                
+            
+        }
+
+        public string[] conteo(string[] a)
+        {
+            return a;
         }
     }
 }
