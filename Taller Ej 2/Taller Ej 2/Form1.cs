@@ -41,28 +41,30 @@ namespace Taller_Ej_2
         {
             try
             {
-                if (txb_votos.Text.Length != 0)
+                if (kea.KeyCode == Keys.Enter)
                 {
-
-                    string votos = txb_votos.Text;
-                    string[] subs = votos.Split(' ', '.', ',', '-', '/', '#');
-
-                    foreach (var sub in subs)
+                    if (txb_votos.Text.Length != 0)
                     {
-                        if (Convert.ToInt32(sub) > 0 && Convert.ToInt32(sub) <= 4)
+
+                        string votos = txb_votos.Text;
+                        string[] subs = votos.Split(' ', '.', ',', '-', '/', '#');
+
+                        foreach (var sub in subs)
                         {
+                            if (Convert.ToInt32(sub) > 0 && Convert.ToInt32(sub) <= 4)
+                            {
 
-                            lsb_Votos.Items.Add($"{sub}");
+                                lsb_Votos.Items.Add($"{sub}");
 
-                            conteo(subs);
+                            }
+
+                            txb_votos.Clear();
+
 
                         }
-
-                        txb_votos.Clear();
-
-
                     }
                 }
+                
             }
             catch (FormatException)
             {
@@ -77,6 +79,7 @@ namespace Taller_Ej_2
                 if (txb_votos.Text.Length != 0)
                 {
 
+                    
                     string votos = txb_votos.Text;
                     string[] subs = votos.Split(' ', '.', ',', '-', '/', '#');
 
@@ -86,8 +89,6 @@ namespace Taller_Ej_2
                         {
 
                             lsb_Votos.Items.Add($"{sub}");
-
-                            conteo(subs);
 
                         }
 
