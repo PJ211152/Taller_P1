@@ -41,13 +41,21 @@ namespace Taller_Ej_2
         {
             if (kea.KeyCode.Equals(Keys.Return))
             {
-                lsb_Votos.Items.Add(txb_votos.Text);
+                if (txb_votos.Text.Length != 0)
+                {
+                    lsb_Votos.Items.Add(txb_votos.Text);
+                    txb_votos.Clear();
+                }
             }
         }
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            lsb_Votos.Items.Add(txb_votos.Text);
+            if(txb_votos.Text.Length != 0)
+            {
+                lsb_Votos.Items.Add(txb_votos.Text);
+                txb_votos.Clear();
+            }
         }
     }
 }
